@@ -1,6 +1,6 @@
 # Organização de Projeto em React ⚛️
 
-Aqui está um modelo de organização de arquivos em um projeto React:
+Aqui está uma estrutura de pastas comum para um projeto React:
 
 
 ## Dir Principais
