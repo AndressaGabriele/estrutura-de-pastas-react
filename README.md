@@ -6,9 +6,7 @@ Aqui está uma estrutura de pastas simplificada para um projeto React:
 ├──📁 public - Contém recursos estáticos como imagens, ícones e arquivos de fonte.
 
 ├──📁 src - Pasta raiz do código-fonte da aplicação React.
-
 │   ├──📁 assets - Armazena imagens, fontes e outros arquivos estáticos.
-
 │   ├──📁 components - Contém componentes reutilizáveis da interface do usuário.
 
 │   ├──📁 config - Armazena arquivos de configuração e constantes globais.
