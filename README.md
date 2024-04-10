@@ -1,45 +1,47 @@
-# Estrutura de Pastas
+# Organização de Pastas em um Projeto React
 
-Aqui está um modelo de organização de arquivos em um projeto React:
+Aqui está uma estrutura de pastas simplificada para um projeto React:
 
-📂 project_root
-├──📁 public - Contém recursos estáticos acessíveis publicamente, como imagens, ícones e arquivos de fonte.
+📁 root_do_projeto
+├──📁 public - Contém recursos estáticos como imagens, ícones e arquivos de fonte.
+
 ├──📁 src - Pasta raiz do código-fonte da aplicação React.
-│   ├──📁 assets - Armazena recursos estáticos como imagens, arquivos de fonte, etc.
-│   ├──📁 components - Reúne componentes reutilizáveis do React usados na interface.
-│   ├──📁 config - Armazena arquivos de configuração, plugins, extensões, constantes globais.
-│   ├──📁 hooks - Local para armazenar hooks personalizados.
-│   ├──📁 pages - Contém componentes que representam páginas da aplicação.
-│   │   ├──📁 Home - Componentes relacionados à página inicial.
-│   │   │   ├──📄 index.tsx
-│   │   │   └──📄 styles.ts
-│   │   ├──📁 Dashboard - Componentes relacionados ao painel principal da aplicação.
-│   │   │   ├──📄 index.tsx
-│   │   │   └──📄 styles.ts
-│   │   └──📁 Profile - Componentes relacionados ao perfil do usuário.
-│   │       ├──📁 Settings - Componentes relacionados às configurações do perfil.
-│   │       │   ├──📄 index.tsx
-│   │       │   └──📄 styles.ts
-│   │       ├──📄 index.tsx
-│   │       └──📄 styles.ts
-│   ├──📁 services - Contém serviços externos, como chamadas de API.
-│   │   └──📄 ApiService.ts
-│   ├──📁 store - Gerenciamento de estado global com Redux ou Context API.
-│   ├──📁 styles - Estilos globais e específicos da aplicação.
-│   │   ├──📄 global.css - Estilos globais.
-│   │   └──📄 theme.css - Temas de estilo.
-│   ├──📁 utils - Funções utilitárias reutilizáveis em todo o projeto.
-│   ├──📄 App.tsx - Componente principal da aplicação.
-│   ├──📄 index.tsx - Ponto de entrada da aplicação.
-│   └──📄 routes.tsx - Configuração das rotas da aplicação.
-├──📄 .gitignore
-├──📄 index.html
-├──📄 package.json
-├──📄 package-lock.json
-├──📄 README.md
-└──📄 tsconfig.json
 
+│   ├──📁 assets - Armazena imagens, fontes e outros arquivos estáticos.
 
+│   ├──📁 components - Contém componentes reutilizáveis da interface do usuário.
+
+│   ├──📁 config - Armazena arquivos de configuração e constantes globais.
+
+│   ├──📁 hooks - Local para armazenar React Hooks personalizados.
+
+│   ├──📁 pages - Contém os componentes que representam as páginas da aplicação.
+
+│   ├──📁 services - Contém serviços da aplicação, como chamadas de API.
+
+│   ├──📁 store - Armazena a configuração do estado global da aplicação.
+
+│   ├──📁 styles - Contém estilos globais e específicos de componentes.
+
+│   ├──📁 utils - Reúne funções utilitárias compartilhadas.
+
+│   ├──📄 App.js - Componente principal da aplicação React.
+
+│   ├──📄 index.js - Ponto de entrada da aplicação.
+
+│   └──📄 routes.js - Configuração das rotas da aplicação.
+
+├──📄 .gitignore - Arquivo que especifica quais arquivos e pastas devem ser ignorados pelo controle de versão Git.
+
+├──📄 index.html - Arquivo HTML principal da aplicação.
+
+├──📄 package.json - Arquivo de configuração do npm que contém informações sobre o projeto.
+
+├──📄 package-lock.json - Arquivo gerado automaticamente que especifica as versões exatas das dependências do projeto.
+
+├──📄 README.md - Fornece informações sobre o projeto e sua estrutura de pastas.
+
+└──📄 webpack.config.js - Arquivo de configuração do webpack para empacotar o aplicativo para produção.
 
 ## Personalização e Flexibilidade
 
