@@ -1,31 +1,53 @@
-# Estrutura de Pastas
+# Organização de Pastas em um Projeto React ⚛️
+-----------
+Neste repo trago a forma que eu aderi de organizar os arquivos quando trabalho com react, vai de acordo com uma estrutura que funciona tanto para aplicações web quanto nativa. 
 
-Este projeto segue uma estrutura de pastas organizada para facilitar o desenvolvimento e manutenção do código-fonte. Aqui está uma explicação mais detalhada sobre cada diretório:
+📁 root_do_projeto
+├──📁 public - Contém recursos estáticos acessíveis publicamente, como imagens, ícones e arquivos de fonte.
 
-- **src**: Esta é a pasta principal que contém todo o código-fonte do seu aplicativo React. Aqui está uma visão geral dos diretórios dentro de `src`:
+├──📁 src - Pasta raiz do código-fonte da aplicação React.
 
-  - **components**: Este diretório é dedicado aos componentes reutilizáveis do seu aplicativo. Cada componente pode ter seu próprio diretório dentro de `components`, contendo o arquivo JavaScript/JSX do componente, bem como arquivos adicionais, como estilos CSS, testes, etc.
+│   ├──📁 assets - Armazena arquivos estáticos, como imagens e fontes, utilizados na aplicação.
 
-  - **pages**: Aqui estão os componentes que representam páginas específicas do seu aplicativo. Se você estiver usando um roteador (como react-router), cada rota pode ter seu próprio componente dentro deste diretório.
+│   ├──📁 components - Contém componentes reutilizáveis que compõem a interface do usuário da aplicação.
 
-  - **assets**: Este diretório é usado para armazenar recursos estáticos, como imagens, fontes, ícones, etc., que são usados no seu aplicativo.
+│   ├──📁 config - Armazena arquivos de configuração e constantes globais necessárias para o funcionamento da aplicação.
 
-  - **styles**: Contém arquivos de estilo, como arquivos CSS ou arquivos SCSS/SASS, que são compartilhados entre os componentes do seu aplicativo.
+│   ├──📁 hooks - Local onde ficam os React Hooks personalizados, utilizados para compartilhar lógica entre componentes.
 
-  - **utils**: Este diretório contém funções ou utilitários compartilhados que são usados em várias partes do aplicativo.
+│   ├──📁 pages - Contém os componentes que representam as diferentes páginas da aplicação.
 
-  - **services**: Aqui estão os arquivos de serviço usados para comunicação com APIs externas ou serviços. Isso pode incluir configuração de Axios ou outras bibliotecas de requisição HTTP.
+│   │   ├──📁 Home - Componentes relacionados à página inicial da aplicação.
+│   │   ├──📁 About - Componentes relacionados à página "Sobre" da aplicação.
+│   │   └──📁 Contact - Componentes relacionados à página de contato da aplicação.
 
-  - **constants**: Este diretório contém arquivos com constantes ou configurações do aplicativo, como URLs de API, chaves de acesso, etc.
+│   ├──📁 services - Contém os serviços da aplicação, como comunicação com APIs externas.
 
-- **public**: Esta pasta contém arquivos estáticos que são servidos diretamente pelo servidor. O arquivo HTML principal do seu aplicativo (geralmente chamado de `index.html`) está localizado aqui, junto com outros recursos estáticos, como imagens de ícones ou manifestos para aplicativos da web progressivos.
+│   ├──📁 store - Armazena a configuração do estado global da aplicação, se estiver sendo utilizado um gerenciador de estado como Redux.
 
-- **node_modules**: Este é o diretório onde todas as dependências do projeto são instaladas pelo gerenciador de pacotes (como npm ou Yarn). Não é necessário versionar este diretório, pois pode ser reconstruído a partir do arquivo `package.json`.
+│   ├──📁 styles - Contém os estilos da aplicação, incluindo estilos globais e específicos de componentes.
 
-- **package.json e package-lock.json (ou yarn.lock)**: Estes são arquivos de configuração usados pelo gerenciador de pacotes para controlar as dependências do projeto, scripts de build, versões, etc.
+│   ├──📁 utils - Reúne funções utilitárias que são compartilhadas em diferentes partes da aplicação.
 
-- **babel.config.js, webpack.config.js**: Arquivos de configuração para Babel e webpack, respectivamente. Eles controlam como o código JavaScript é transpilado e empacotado para produção.
+│   ├──📄 App.js - O componente principal da aplicação React.
 
-- **.gitignore**: Especifica quais arquivos e pastas devem ser ignorados pelo Git durante o controle de versão do seu projeto.
+│   ├──📄 index.js - O ponto de entrada da aplicação, onde o React é inicializado e o aplicativo é renderizado no DOM.
 
-Este README serve como um lembrete sobre a estrutura de pastas do projeto. Mantenha-o atualizado conforme novas alterações na estrutura são feitas.
+│   └──📄 routes.js - Configuração das rotas da aplicação, se estiver sendo utilizado um sistema de roteamento.
+
+├──📄 .gitignore - Arquivo que especifica quais arquivos e pastas devem ser ignorados pelo controle de versão Git.
+
+├──📄 index.html - Arquivo HTML principal da aplicação, que é o ponto de entrada para o aplicativo React.
+
+├──📄 package.json - Arquivo de configuração do npm que contém informações sobre o projeto e suas dependências.
+
+├──📄 package-lock.json - Arquivo gerado automaticamente que especifica as versões exatas das dependências do projeto.
+
+├──📄 README.md - Este arquivo, que fornece informações sobre o projeto, sua estrutura de pastas e como configurá-lo e executá-lo.
+
+└──📄 webpack.config.js - Arquivo de configuração do webpack, que é utilizado para empacotar o aplicativo para produção.
+
+
+## Personalização e Flexibilidade
+
+Lembre-se de que esta estrutura de pastas é apenas um modelo sugerido. Você é livre para adaptá-la e personalizá-la conforme necessário para atender às especificidades do seu projeto. A organização eficiente de arquivos torna a manutenção mais fácil e a colaboração mais suave.
