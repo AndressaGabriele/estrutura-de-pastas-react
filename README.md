@@ -1,6 +1,6 @@
 # Organização de Pastas em um Projeto React ⚛️
 -----------
-Neste repo trago a forma que eu aderi de organizar os arquivos quando trabalho com react, vai de acordo com uma estrutura que funciona tanto para aplicações web quanto nativa. 
+Neste repo trago a forma que eu aderi de organizar os arquivos quando trabalho com react e também explicando a função de cada pasta, vai de acordo com uma estrutura que funciona tanto para aplicações web quanto nativa. 
 
 📁 root_do_projeto
 ├──📁 public - Contém recursos estáticos acessíveis publicamente, como imagens, ícones e arquivos de fonte.
