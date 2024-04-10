@@ -2,7 +2,7 @@
 
 Aqui está um modelo de organização de arquivos em um projeto React:
 
-📂 project_root
+`📂 project_root
 ├──📁 public - Contém recursos estáticos acessíveis publicamente, como imagens, ícones e arquivos de fonte.
 ├──📁 src - Pasta raiz do código-fonte da aplicação React.
 │   ├──📁 assets - Armazena recursos estáticos como imagens, arquivos de fonte, etc.
@@ -37,7 +37,7 @@ Aqui está um modelo de organização de arquivos em um projeto React:
 ├──📄 package.json
 ├──📄 package-lock.json
 ├──📄 README.md
-└──📄 tsconfig.json
+└──📄 tsconfig.json`
 
 ## Personalização e Flexibilidade
 
