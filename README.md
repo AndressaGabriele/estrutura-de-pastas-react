@@ -5,7 +5,7 @@ Aqui está uma estrutura de pastas comum para um projeto React:
 
 ## Dir Principais
 ```
-📂 project_root
+📂 raiz_projeto
 ├──📁 public - Contém recursos estáticos públicos que são servidos pela aplicação.
 ├──📁 src - Pasta raiz do código-fonte da aplicação.
 │   ├──📁 assets - Armazena recursos estáticos como imagens, arquivos de fonte, etc.
@@ -44,6 +44,7 @@ Aqui está uma estrutura de pastas comum para um projeto React:
 ├──📄 package-lock.json
 ├──📄 README.md
 └──📄 vite.config.ts
+
 ```
 
 ##  🖌️ **Personalização e Flexibilidade**
